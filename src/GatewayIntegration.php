@@ -1,19 +1,19 @@
 <?php
 
-class Pronamic_WP_Pay_Gateways_FrieslandBank_IDealZakelijkPlus_GatewayIntegration {
+class Pronamic_WP_Pay_Gateways_FrieslandBank_IDealZakelijk_GatewayIntegration {
 	public function __construct() {
-		$this->id = 'frieslandbank-ideal-zakelijk-plus';
+		$this->id = 'frieslandbank-ideal-zakelijk';
 	}
 
 	public function get_config_factory_class() {
-		return 'Pronamic_WP_Pay_Gateways_IDealAdvanced_ConfigFactory';
+		return 'Pronamic_WP_Pay_Gateways_IDealBasic_ConfigFactory';
 	}
 
 	public function get_config_class() {
-		return 'Pronamic_WP_Pay_Gateways_IDealAdvanced_Config';
+		return 'Pronamic_WP_Pay_Gateways_IDealBasic_Config';
 	}
 
 	public function get_gateway_class() {
-		return 'Pronamic_WP_Pay_Gateways_IDealAdvanced_Gateway';
+		return 'Pronamic_WP_Pay_Gateways_IDealBasic_Gateway';
 	}
 }
