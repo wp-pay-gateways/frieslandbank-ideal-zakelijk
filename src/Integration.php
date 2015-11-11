@@ -1,8 +1,11 @@
 <?php
 
-class Pronamic_WP_Pay_Gateways_FrieslandBank_IDealZakelijk_GatewayIntegration {
+class Pronamic_WP_Pay_Gateways_FrieslandBank_IDealZakelijk_Integration {
 	public function __construct() {
-		$this->id = 'frieslandbank-ideal-zakelijk';
+		$this->id         = 'frieslandbank-ideal-zakelijk';
+		$this->name       = 'Friesland Bank - iDEAL Zakelijk';
+		$this->provider   = 'frieslandbank';
+		$this->deprecated = true;
 	}
 
 	public function get_config_factory_class() {
