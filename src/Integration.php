@@ -10,6 +10,8 @@
  */
 class Pronamic_WP_Pay_Gateways_FrieslandBank_IDealZakelijk_Integration extends Pronamic_WP_Pay_Gateways_IDealBasic_AbstractIntegration {
 	public function __construct() {
+		parent::__construct();
+
 		$this->id         = 'frieslandbank-ideal-zakelijk';
 		$this->name       = 'Friesland Bank - iDEAL Zakelijk';
 		$this->provider   = 'frieslandbank';
